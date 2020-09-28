@@ -4,9 +4,31 @@
   align-items: center;
   align-content: center;
   height: 100%;
-
+  
   .items-inner {
-    height: 300px;
+    width: 900px;
+    height: 100%;
+  }
+
+  .items-company-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    
+    ul {
+      padding: 0;
+      text-align: left;
+      display: flex;
+
+      li {
+        margin: 5px;
+        padding: 5px;
+
+        list-style: none;
+      }
+    }
   }
 }
 

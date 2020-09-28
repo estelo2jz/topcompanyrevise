@@ -9,8 +9,18 @@ export default class Small extends Component {
           <div className="tab">
             <input type="radio" id="rd1" name="rd" />
             <label className="tab-label" for="rd1">
-              <div>
-                <p>Item 1</p>
+              <div className="items-company-container">
+                <ul>
+                  <li>1</li>
+                  <li>logo</li>
+                  <li>Scribe Media</li>
+                </ul>
+                <ul>
+                  <li>Austin, Texas</li>
+                </ul>
+                <ul>
+                  <li>Publishing</li>
+                </ul>
               </div>
             </label>
             <div className="tab-content">
