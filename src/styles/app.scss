@@ -1,0 +1,63 @@
+.app-container {
+  .app-size-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+
+    .app-header-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      padding: 0;
+      
+      li {
+        list-style: none;
+        width: 100%;
+        margin: 5px;
+        cursor: pointer;
+        background: red;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    }
+    .app-inner-container {
+
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .app-container {
+    .app-size-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    .app-size-container {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

@@ -9,7 +9,6 @@ export default class Home extends Component {
       <div>
         <Topnav />
         <Bottomnav />
-        <Companies />
       </div>
     )
   }

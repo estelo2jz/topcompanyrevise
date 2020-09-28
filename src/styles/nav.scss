@@ -43,14 +43,18 @@
   padding: 10px;
 
   .bottom-inner-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     height: 500px;
     width: 50%;
-
-    h4 {
+    
+    .bottom-header {
       font-size: 2em;
       font-weight: 700;
     }
-    p {
+    .bottom-bio {
       font-size: 1.4em;
     }
   }
