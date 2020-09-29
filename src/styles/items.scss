@@ -102,7 +102,7 @@ input {
             height: 100%;
             .tab-content-image {
               overflow: hidden;
-              width: 50%;
+              width: 100%;
             }
             .tab-ul-content {
               display: flex;
@@ -110,7 +110,7 @@ input {
               align-content: center;
               align-items: center;
               list-style: none;
-              width: 50%;
+              width: 100%;
               
               a {
                 text-decoration: none;
@@ -143,9 +143,29 @@ input {
       display: flex;
       justify-content: space-around;
       width: 100%;
+      padding: 10px;
+      font-size: 1.5em;
 
+      .tab-left-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      .tab-right-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      .rank {
+        font: 3em;
+        font-weight: 700;
+      }
+      
       p {
         margin: 5px;
+        padding: 10px;
       }
     }
     
@@ -219,18 +239,45 @@ input:checked {
   .items-container {
     .items-inner {
       .tab {
-            height: 100%;
+        height: 100%;
+
+        .tab-label {
+          .company-name-container {
+            margin: 5px;
+            width: 100%;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 1em;
+            .tab-left-container {
+              justify-content: center;
+              align-content: center;
+              align-items: center;
+            }
+            .tab-right-container {
+              justify-content: center;
+              align-content: center;
+              align-items: center;
+            }
+          }
+        }
 
         .tab-content {
             height: 100%;
 
           .tab-content-container {
             display: grid;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
             height: 100%;
 
             .tab-content-summary {
               text-align: left;
               padding: 10px;
+              font-size: 0.9em;
             }
 
             .tab-content-content {
@@ -243,9 +290,15 @@ input:checked {
               overflow: hidden;
 
               .tab-content-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
                 overflow: hidden;
-                width: 100%;
+                text-align: center;
                 padding: 10px;
+                margin: 0px;
+                width: 100%;
                 background-position: center;
                 background-size: 100% 100%;
               }
