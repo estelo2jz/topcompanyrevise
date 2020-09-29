@@ -242,6 +242,12 @@ input:checked {
         height: 100%;
 
         .tab-label {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          text-align: center;
+          width: 100%;
           .company-name-container {
             margin: 5px;
             width: 100%;
