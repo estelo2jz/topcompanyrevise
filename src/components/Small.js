@@ -91,7 +91,7 @@ export default class Small extends Component {
 
 function SmallNav(props) {
   return (
-    <div>
+    <div className="items-outer-container">
       <div className="items-company-container">
         <ul>
           <li>{props.rank}</li>

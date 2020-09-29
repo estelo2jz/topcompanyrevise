@@ -1,0 +1,14 @@
+.large-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 200%;
+  margin: 0;
+  padding: 0;
+  .company-name-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}

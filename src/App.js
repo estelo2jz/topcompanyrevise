@@ -20,21 +20,23 @@ function App() {
       <Home />
       <div>
         <div className="app-size-container">
-          <div className="app-header-container">
-            <h4>BY COMPANIES SIZE : </h4>
-          </div>
           <div className="app-inner-container">
-            <ul>
-              <li>
-                <Link to="/Small">SMALL</Link>
-              </li>
-              <li>
-                <Link to="/Medium">MEDIUM</Link>
-              </li>
-              <li>
-                <Link to="/large">LARGE</Link>
-              </li>
-            </ul>
+            <div className="app-header-container">
+              <h4>BY COMPANIES SIZE : </h4>
+            </div>
+            <div className="app-inner-container">
+              <ul>
+                <li>
+                  <Link to="/Small">SMALL</Link>
+                </li>
+                <li>
+                  <Link to="/Medium">MEDIUM</Link>
+                </li>
+                <li>
+                  <Link to="/large">LARGE</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
