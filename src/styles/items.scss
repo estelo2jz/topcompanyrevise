@@ -4,7 +4,7 @@
   align-items: center;
   align-content: center;
   height: 100%;
-  
+
   .items-inner {
     width: 900px;
     height: 100%;
@@ -17,7 +17,7 @@
     align-content: center;
     width: 100%;
     height: 100%;
-    
+
   }
 }
 
@@ -51,11 +51,13 @@ input {
   overflow: hidden;
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
+
 .tab-content {
   display: grid;
   height: 100%;
   margin: 0;
   padding: 0;
+
   .tab-content-inner {
     padding: 10px;
   }
@@ -65,13 +67,13 @@ input {
     justify-content: center;
     align-content: center;
     align-items: center;
+
     .company-pic {
       overflow: hidden;
       background-position: center;
       width: 100%;
 
-      img {
-      }
+      img {}
     }
 
     .tab-ul-container {
@@ -90,10 +92,12 @@ input {
       .tab-content {
         .tab-content-container {
           display: grid;
+
           .tab-content-summary {
             line-height: 2em;
-            
+
           }
+
           .tab-content-content {
             display: flex;
             justify-content: center;
@@ -101,6 +105,7 @@ input {
             align-items: center;
             width: 100%;
             height: 100%;
+
             .tab-content-image {
               overflow: hidden;
               width: 100%;
@@ -108,6 +113,7 @@ input {
               background-size: 100% 100%;
               border-radius: 5px;
             }
+
             .tab-ul-content {
               display: flex;
               justify-content: space-evenly;
@@ -116,7 +122,7 @@ input {
               list-style: none;
               width: 100%;
               height: 100%;
-              
+
               a {
                 text-decoration: none;
               }
@@ -128,6 +134,7 @@ input {
                 align-items: center;
                 height: 400px;
               }
+
               li {
                 border-bottom: 2px solid black;
                 width: 150px;
@@ -136,7 +143,7 @@ input {
                 justify-content: left;
                 align-content: center;
                 align-items: center;
-                
+
               }
             }
           }
@@ -153,6 +160,8 @@ input {
 
   .tab-label {
     padding: 0;
+    margin: 0.5px;
+
     .company-name-container {
       display: flex;
       justify-content: space-around;
@@ -175,18 +184,21 @@ input {
           justify-content: center;
           align-items: center;
           align-content: center;
+
           p {
             width: 50px;
           }
         }
-        .tab-company-image {
-        }
+
+        .tab-company-image {}
+
         .tab-company-name {
-          width: 200px;
+          width: 150px;
         }
 
 
       }
+
       .tab-right-container {
         display: flex;
         justify-content: center;
@@ -197,27 +209,29 @@ input {
         .tab-company-location {
           width: 100%;
         }
-        .tab-company-sector  {
+
+        .tab-company-sector {
           width: 100%;
         }
 
-          p {
-            width: 190px;
-            height: 50%;
-          }
+        p {
+          width: 190px;
+          height: 50%;
+        }
 
       }
+
       .rank {
         font: 3em;
         font-weight: 700;
       }
-      
+
       p {
         margin: 5px;
         padding: 10px;
       }
     }
-    
+
   }
 
   &-label {
@@ -388,14 +402,16 @@ input:checked {
 
 @media screen and (max-width: 700px) {
   .items-container {
-        width: 100%;
+    width: 100%;
 
     .items-inner {
-        width: 100%;
+      width: 100%;
 
       .tab {
         height: 100%;
         width: 100%;
+        margin: 5px;
+
         .tab-label {
           display: flex;
           justify-content: center;
@@ -403,8 +419,8 @@ input:checked {
           align-items: center;
           text-align: center;
           width: 100%;
+
           .company-name-container {
-            margin: 5px;
             width: 100%;
             display: grid;
             justify-content: center;
@@ -412,21 +428,84 @@ input:checked {
             align-items: center;
             text-align: center;
             font-size: 1.1em;
+
+
             .tab-left-container {
+              display: flex;
               justify-content: center;
               align-content: center;
               align-items: center;
+              width: 100%;
+              height: 100%;
+              margin: 0;
+              padding: 0;
+
+              p {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                font-size: 0.8em;
+              }
+
+              .tab-company-rank {
+
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+              }
+
+              .tab-company-name {}
+
+              .tab-company-image {
+                img {
+                  width: 50%;
+                  height: 50%;
+                }
+              }
+
             }
+
             .tab-right-container {
-              justify-content: center;
-              align-content: center;
-              align-items: center;
+              width: 100%;
+              height: 100%;
+
+
+              p {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                font-size: 0.8em;
+
+              }
+
+              .tab-company-location {
+                width: 200px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                p {
+                  width: 100%;
+                }
+              }
+
+              .tab-company-sector {
+                width: 200px;
+
+                p {
+                  width: 100%;
+                }
+              }
             }
           }
         }
 
         .tab-content {
-            height: 100%;
+          height: 100%;
 
           .tab-content-container {
             display: grid;
@@ -447,7 +526,7 @@ input:checked {
               p {
                 width: 80%;
               }
-              
+
               .tab-summary-container {
                 display: flex;
                 justify-content: center;
@@ -478,11 +557,17 @@ input:checked {
                 text-align: center;
                 padding: 10px;
                 margin: 0px;
-                width: 350px;
-                height: 200px;
+                width: 100%;
+                height: 100%;
                 background-position: center;
                 background-size: 100% 100%;
                 border-radius: 5px;
+
+                img {
+                  width: 80%;
+                  height: 80%;
+                  background-position: center;
+                }
               }
 
               .tab-ul-content {
@@ -503,6 +588,7 @@ input:checked {
 
                 li {
                   border-bottom: 100% solid black;
+
                   a {
                     text-decoration: none;
                   }

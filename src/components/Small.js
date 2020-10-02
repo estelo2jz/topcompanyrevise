@@ -22,10 +22,10 @@ export default class Small extends Component {
                   </div>
                 </div>
                 <div className="tab-right-container">
-                  <div>
+                  <div className="tab-company-location">
                     <p>Austin, Texas</p>
                   </div>
-                  <div className="tab-right-container">
+                  <div className="tab-company-sector">
                     <p>Publishing</p>
                   </div>
                 </div>
@@ -80,10 +80,10 @@ export default class Small extends Component {
                   </div>
                 </div>
                 <div className="tab-right-container">
-                  <div>
+                  <div className="tab-company-location">
                     <p>San Diego, Calif.</p>
                   </div>
-                  <div>
+                  <div className="tab-company-sector">
                     <p>Commercial Real Estate</p>
                   </div>
                 </div>
@@ -196,10 +196,10 @@ export default class Small extends Component {
                   </div>
                 </div>
                 <div className="tab-right-container">
-                  <div clas>
+                  <div className="tab-company-location">
                     <p>Denver, Colo.</p>
                   </div>
-                  <div>
+                  <div className="tab-company-sector">
                     <p>Advertising Technology and Software</p>
                   </div>
                 </div>
