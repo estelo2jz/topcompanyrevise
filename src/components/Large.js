@@ -22,10 +22,10 @@ export default class Large extends Component {
                   </div>
                 </div>
                 <div className="tab-right-container">
-                  <div>
+                  <div className="tab-company-location">
                     <p>Westlake, Texas</p>
                   </div>
-                  <div className="tab-right-container">
+                  <div className="tab-right-sector">
                     <p>General Insurance</p>
                   </div>
                 </div>
@@ -80,10 +80,10 @@ export default class Large extends Component {
                   </div>
                 </div>
                 <div className="tab-right-container">
-                  <div>
+                  <div className="tab-company-location">
                     <p>Omaha, Neb.</p>
                   </div>
-                  <div>
+                  <div className="tab-company-sector">
                     <p>Agents and Brokers</p>
                   </div>
                 </div>
@@ -196,10 +196,10 @@ export default class Large extends Component {
                   </div>
                 </div>
                 <div className="tab-right-container">
-                  <div clas>
+                  <div className="tab-company-location">
                     <p>Chester, Pa.</p>
                   </div>
-                  <div>
+                  <div className="tab-company-sector">
                     <p>Home Improvement and Remodeling</p>
                   </div>
                 </div>

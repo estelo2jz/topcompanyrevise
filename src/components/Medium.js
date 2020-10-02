@@ -22,10 +22,10 @@ export default class Medium extends Component {
                   </div>
                 </div>
                 <div className="tab-right-container">
-                  <div>
+                  <div className="tab-company-location">
                     <p>Cottonwood Heights, Utah</p>
                   </div>
-                  <div className="tab-right-container">
+                  <div className="tab-right-sector">
                     <p>Financial Education</p>
                   </div>
                 </div>
@@ -80,10 +80,10 @@ export default class Medium extends Component {
                   </div>
                 </div>
                 <div className="tab-right-container">
-                  <div>
+                  <div className="tab-company-location">
                     <p>Washington, D.C.</p>
                   </div>
-                  <div>
+                  <div className="tab-company-sector">
                     <p>Travel / Vacation</p>
                   </div>
                 </div>
@@ -196,10 +196,10 @@ export default class Medium extends Component {
                   </div>
                 </div>
                 <div className="tab-right-container">
-                  <div clas>
+                  <div className="tab-company-location">
                     <p>Meridian, Idaho</p>
                   </div>
-                  <div>
+                  <div className="tab-company-sector">
                     <p>New Home Construction</p>
                   </div>
                 </div>
