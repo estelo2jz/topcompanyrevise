@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 import Small from './components/Small';
 import Medium from './components/Medium';
@@ -38,22 +39,23 @@ function App() {
               </ul>
             </div>
           </div>
-        </div>
-
+          </div>
+          
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
-            <Route path="/Small">
+          <Route path="/Small">
               <Small />
             </Route>
             <Route path="/Medium">
-              <Medium />
+            <Medium />
             </Route>
             <Route path="/Large">
               <Large />
             </Route>
-          </Switch>
+            </Switch>
         </div>
+        <Footer />
       </Router>
     </div>
   );
