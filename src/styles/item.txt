@@ -1,0 +1,612 @@
+.items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+
+  .items-inner {
+    width: 900px;
+    height: 100%;
+  }
+
+  .items-company-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+
+$midnight: #2c3e50;
+$clouds: #ecf0f1;
+
+// General
+
+h1 {
+  margin: 0;
+  line-height: 2;
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 .5em;
+  font-weight: normal;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab-content {
+  display: grid;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  .tab-content-inner {
+    padding: 10px;
+  }
+
+  .tab-content-company-info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    .company-pic {
+      overflow: hidden;
+      background-position: center;
+      width: 100%;
+
+      img {}
+    }
+
+    .tab-ul-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 100%;
+    }
+  }
+}
+
+.items-container {
+  .items-inner {
+    .tab {
+      .tab-content {
+        .tab-content-container {
+          display: grid;
+
+          .tab-content-summary {
+            line-height: 2em;
+
+          }
+
+          .tab-content-content {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .tab-content-image {
+              overflow: hidden;
+              width: 100%;
+              background-position: center;
+              background-size: 100% 100%;
+              border-radius: 5px;
+            }
+
+            .tab-ul-content {
+              display: flex;
+              justify-content: space-evenly;
+              align-content: center;
+              align-items: center;
+              list-style: none;
+              width: 100%;
+              height: 100%;
+
+              a {
+                text-decoration: none;
+              }
+
+              ul {
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                height: 400px;
+              }
+
+              li {
+                border-bottom: 2px solid black;
+                width: 150px;
+                height: 50px;
+                display: grid;
+                justify-content: left;
+                align-content: center;
+                align-items: center;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+
+  .tab-label {
+    padding: 0;
+    margin: 0.5px;
+
+    .company-name-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+      width: 100%;
+      font-size: 1.3em;
+      text-align: left;
+
+      .tab-left-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: left;
+        height: 100%;
+
+        .tab-company-rank {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+
+          p {
+            width: 50px;
+          }
+        }
+
+        .tab-company-image {}
+
+        .tab-company-name {
+          width: 150px;
+        }
+
+
+      }
+
+      .tab-right-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: left;
+
+        .tab-company-location {
+          width: 100%;
+        }
+
+        .tab-company-sector {
+          width: 100%;
+        }
+
+        p {
+          width: 190px;
+          height: 50%;
+        }
+
+      }
+
+      .rank {
+        font: 3em;
+        font-weight: 700;
+      }
+
+      p {
+        margin: 5px;
+        padding: 10px;
+      }
+    }
+
+  }
+
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: $midnight;
+    font-weight: bold;
+    cursor: pointer;
+
+    /* Icon */
+    &:hover {
+      background: darken($midnight, 10%);
+    }
+  }
+
+  &-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: $midnight;
+    background: white;
+    transition: all .35s;
+  }
+
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: $midnight;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($midnight, 10%);
+    }
+  }
+}
+
+// :checked
+input:checked {
+  +.tab-label {
+    background: darken($midnight, 10%);
+    padding: 10px;
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+
+  ~.tab-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .items-container {
+    width: 100%;
+
+    .items-inner {
+      width: 100%;
+
+      .tab {
+        height: 100%;
+        width: 100%;
+
+        .tab-label {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+
+          .company-name-container {
+            margin: 5px;
+            width: 100%;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 1.1em;
+
+            .tab-left-container {
+              justify-content: center;
+              align-content: center;
+              align-items: center;
+            }
+
+            .tab-right-container {
+              justify-content: center;
+              align-content: center;
+              align-items: center;
+            }
+          }
+        }
+
+        .tab-content {
+          height: 100%;
+
+          .tab-content-container {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            height: 100%;
+
+            .tab-content-summary {
+              text-align: left;
+              padding: 10px;
+              font-size: 0.9em;
+              line-height: 2em;
+            }
+
+            .tab-content-content {
+              display: grid;
+              justify-content: center;
+              align-content: center;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+
+
+              .tab-content-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                overflow: hidden;
+                text-align: center;
+                padding: 10px;
+                margin: 0px;
+                width: 300px;
+                height: 200px;
+                background-position: center;
+                background-size: 100% 100%;
+              }
+
+              .tab-ul-content {
+                display: flex;
+                justify-content: space-evenly;
+                align-content: center;
+                align-items: center;
+                list-style: none;
+                width: 100%;
+                padding: 10px;
+                height: 200%;
+                text-align: left;
+
+                li {
+                  border-bottom: 2px solid black;
+
+                  a {
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .items-container {
+    width: 100%;
+
+    .items-inner {
+      width: 100%;
+
+      .tab {
+        height: 100%;
+        width: 100%;
+
+        .tab-label {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+
+          .company-name-container {
+            width: 100%;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 1.1em;
+
+
+            .tab-left-container {
+              display: flex;
+              justify-content: center;
+              align-content: center;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+              margin: 0;
+              padding: 0;
+
+              p {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                font-size: 0.8em;
+              }
+
+              .tab-company-rank {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+              }
+
+              .tab-company-name {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+              }
+
+              .tab-company-image {
+                img {
+                  width: 50%;
+                  height: 50%;
+                }
+              }
+
+            }
+
+            .tab-right-container {
+              width: 100%;
+              height: 100%;
+              margin: 0;
+              padding: 0;
+
+
+              p {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                font-size: 0.8em;
+
+              }
+
+              .tab-company-location {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                height: 100px;
+
+              }
+
+              .tab-company-sector {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+
+        .tab-content {
+          height: 100%;
+
+          .tab-content-container {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            
+
+            .tab-content-summary {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              align-content: center;
+              width: 100%;
+              height: 100%;
+
+              p {
+                width: 80%;
+              }
+
+              .tab-summary-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                text-align: left;
+                font-size: 0.9em;
+                width: 100px;
+                line-height: 2em;
+              }
+            }
+
+            .tab-content-content {
+              display: grid;
+              justify-content: center;
+              align-content: center;
+              align-items: center;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+
+              .tab-content-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                overflow: hidden;
+                text-align: center;
+                padding: 10px;
+                margin: 0px;
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: 100% 100%;
+                border-radius: 5px;
+
+                img {
+                  width: 80%;
+                  height: 80%;
+                  background-position: center;
+                }
+              }
+
+              .tab-ul-content {
+                display: flex;
+                justify-content: space-evenly;
+                align-content: center;
+                align-items: center;
+                list-style: none;
+                grid-gap: 50px;
+                width: 100%;
+                height: 200%;
+                text-align: left;
+                line-height: 2em;
+                margin-top: 10px;
+                padding: 0;
+                margin: 0;
+
+
+                li {
+                  border-bottom: 100% solid black;
+                  height: 100%;
+
+                  a {
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

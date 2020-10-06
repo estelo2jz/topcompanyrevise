@@ -3,9 +3,9 @@ import './App.css';
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 
-import Small from './components/Small';
-import Medium from './components/Medium';
-import Large from './components/Large';
+import Small from './components/small/Small';
+import Medium from './components/medium/Medium';
+import Large from './components/large/Large';
 
 import {
   BrowserRouter as Router,
