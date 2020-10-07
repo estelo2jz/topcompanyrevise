@@ -22,7 +22,7 @@ export const MediumItems = [
   {
     rank: '3',
     title: '8z Real Estate',
-    location: "Boulder, Colo.",
+    location: "Boulder, Colo",
     sector: 'Agents / Brokers',
     companyBio: '8z Real Estate is a real-estate brokerage firm that provides home buyers and sellers with market data and online tools, along with the knowledge and expertise of professionals on the ground.',
     yearFounded: '2009',
@@ -42,7 +42,7 @@ export const MediumItems = [
   {
     rank: '5',
     title: 'N2 Publishing',
-    location: "Wilmington, N.C.",
+    location: "Wilmington, N.C",
     sector: 'Neighborhood Publications',
     companyBio: 'N2 Publishing produces neighborhood publications that create a sense of community and support local businesses.',
     yearFounded: '2004',
