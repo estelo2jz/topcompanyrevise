@@ -57,7 +57,7 @@
 
 
             .tab-company-rank {
-              width: 30%;
+              width: 50%;
               height: 100%;
               display: flex;
               justify-content: center;
@@ -78,6 +78,10 @@
               align-items: center;
               height: 100%;
               padding: 5px;
+              text-align: left;
+              p {
+                width: 100%;
+              }
             }
           }
 
@@ -190,5 +194,29 @@
 }
 
 @media screen and (max-width: 600px) {
+  .items-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
+    .items-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+
+      .tab {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+
+        .items-grid-container {
+        }
+      }
+    }
+  }
 }
