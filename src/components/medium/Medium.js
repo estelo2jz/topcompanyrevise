@@ -34,7 +34,9 @@ export default class Small extends Component {
                   <div className="tab-content">
                     <div className="tab-content-container">
                       <div className="tab-content-summary">
-                        <p>{item.companyBio}</p>
+                        <div>
+                          <p>{item.companyBio}</p>
+                        </div>
                       </div>
                       <div className="tab-content-content">
                         <div className="tab-content-image">
